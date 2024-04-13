@@ -20,7 +20,7 @@ class getallusers(APIView):
         mains = []
         for i in objs:
             js = {}
-            js["username"]=i.email
+            js["username"]=i.username
             js["password"]=i.password
             js["name"] = i.name
             mains.append(js)
