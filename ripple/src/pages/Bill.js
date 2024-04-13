@@ -19,11 +19,12 @@ const Bill = () => {
 
     return (
         <body>
+            <div className='home1-container'>
             <header
                 data-thq="thq-navbar"
                 className="navbarContainer home1-navbar-interactive"
             >
-                <span className="logo">BANKIFY</span>
+                <span className="logo">PAYBRIDGE</span>
                 <div data-thq="thq-navbar-nav" className="home1-desktop-menu">
                     <nav className="home1-links"></nav>
                     <div className="home1-buttons">
@@ -76,6 +77,7 @@ const Bill = () => {
                     ))}
                 </tbody>
             </table>
+            </div>
         </body>
     );
 };

@@ -53,7 +53,8 @@ const Login = () => {
                     data-thq="thq-navbar"
                     className="navbarContainer login-navbar-interactive"
                 >
-                    <span className="logo">BANKIFY</span>
+                  <span className='logo'>PAYBRIDGE</span>
+                    {/* <img className="logo" src ={ require('./logo.jpg')}/> */}
                     <div data-thq="thq-navbar-nav" className="login-desktop-menu">
                         <nav className="login-links"></nav>
                     </div>
@@ -70,7 +71,7 @@ const Login = () => {
                         <input
                             type="text"
                             placeholder="Email"
-                            className="login-textinput input"
+                            className="login-email"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                         />

@@ -25,6 +25,8 @@ export const Routed = () =>{
                 </Route> 
                 <Route path='/XRP' Component={XRPtest}>
                 </Route> 
+                <Route path='/logo.jpg'>
+                </Route> 
             </Routes>
             
         </Router>

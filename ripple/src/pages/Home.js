@@ -32,7 +32,7 @@ const Home = () => {
                 data-thq="thq-navbar"
                 className="navbarContainer home1-navbar-interactive"
             >
-                <span className="logo">BANKIFY</span>
+                <span className="logo">PAYBRIDGE</span>
                 <div data-thq="thq-navbar-nav" className="home1-desktop-menu">
                     <nav className="home1-links"></nav>
                     <div className="home1-buttons">
@@ -135,14 +135,11 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="home1-features">
-                <div className="home1-features-container featuresContainer"></div>
-            </div>
-            <div className="home1-pricing"></div>
-            <div className="home1-banner"></div>
-            <div className="home1-faq">
-                <div className="home1-faq-container faqContainer"></div>
-            </div>
+            
+            
+
+
+
             <div className="home1-footer"></div>
         </div>
     );
