@@ -6,6 +6,10 @@
   align-items: center;
   flex-direction: column;
 }
+
+.buttonFlat:hover{
+  color: brown;
+}
 .home1-header {
   width: 100%;
   display: flex;
@@ -35,6 +39,7 @@
 }
 .home1-login {
   margin-right: 32px;
+  background-color: none;
 }
 .home1-burger-menu {
   display: none;
@@ -210,6 +215,7 @@
   align-items: center;
   justify-content: center;
 }
+
 @media(max-width: 991px) {
   .home1-hero1 {
     flex-direction: column;
@@ -338,4 +344,11 @@
   color: #FFFFFF;
   text-align: center;
   border-radius: 4px;
+}
+
+.buttonFlat{
+  background-color: var(--dl-color-primary1);
+  border: #ffffff;
+  color: whitesmoke;
+  
 }
