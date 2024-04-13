@@ -3,7 +3,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 
 // import FeatureCard from '../components/feature-card'
-// import './Home.css'
+import './Home.css'
 // import './style.css'
 import { useNavigate } from 'react-router-dom';
 
