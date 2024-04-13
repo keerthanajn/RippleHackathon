@@ -74,13 +74,13 @@ const AddSource = () => {
           data-thq="thq-navbar"
           className="navbarContainer home1-navbar-interactive"
         >
-          <span className="logo">BANKIFY</span>
+          <span className="logo">PAYBRIDGE</span>
           <div data-thq="thq-navbar-nav" className="home1-desktop-menu">
             <nav className="home1-links"></nav>
             <div className="home1-buttons">
-            <button className="home1-login buttonFlat" onClick={() => navigate('/CreateBill')}>Create Bill</button>
-            <button className="home1-login buttonFlat" onClick={() => navigate('/Bill')}>My Bills</button>
             <button className="home1-login buttonFlat" onClick={() => navigate('/home')}>Home</button>
+            <button className="home1-login buttonFlat" onClick={() => navigate('/Bill')}>My Bills</button>
+            <button className="home1-login buttonFlat" onClick={() => navigate('/CreateBill')}>Create Bill</button>
             <button className="home1-login buttonFlat" onClick={() => navigate('/payment')}>Transaction</button>
               <button className="home1-login buttonFlat" onClick={() => navigate('/')}>Logout</button>
             </div>
