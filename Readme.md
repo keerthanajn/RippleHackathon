@@ -1,1 +1,9 @@
-A decentralised market place for bidding in all currencies. 
+## Frontend Built in REACT.js
+
+
+# Installation
+```
+cd ripple
+npm i
+npm start 
+```
