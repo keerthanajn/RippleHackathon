@@ -11,9 +11,9 @@ export const Routed = () =>{
     return(
         <Router>
             <Routes>
-                <Route path='/' Component={Home}>  
+                <Route path='/' Component={Login}>  
                 </Route> 
-                <Route path='/login' Component={Login}>
+                <Route path='/home' Component={Home}>
                 </Route> 
                 <Route path='/payment' Component={Payment}>
                 </Route> 

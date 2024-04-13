@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './CreateBill.css';
+import { useNavigate } from 'react-router-dom'
 
 const CreateBill = () => {
     const [recipientName, setRecipientName] = useState('');
@@ -14,16 +15,34 @@ const CreateBill = () => {
         // Handle form submission logic here
         console.log('Form submitted:', { recipientName, recipientEmail, referenceName, amount, dueDate, currency });
     };
-
+    const navigate = useNavigate()
     return (
         <body>
-            <div className="navbar">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/transactions">Transactions</a></li>
-                    <li><a href="/profile">Profile</a></li>
-                </ul>
+            <header
+          data-thq="thq-navbar"
+          className="navbarContainer home1-navbar-interactive"
+        >
+          <span className="logo">BANKIFY</span>
+          <div data-thq="thq-navbar-nav" className="home1-desktop-menu">
+            <nav className="home1-links"></nav>
+            <div className="home1-buttons">
+            <button className="home1-login buttonFlat" onClick={() => navigate('/home')}>Home</button>
+            <button className="home1-login buttonFlat" onClick={() => navigate('/Bill')}>My Bills</button>
+            <button className="home1-login buttonFlat" onClick={() => navigate('/AddSource')}>Add Account</button>
+            <button className="home1-login buttonFlat" onClick={() => navigate('/payment')}>Transaction</button>
+              <button className="home1-login buttonFlat" onClick={() => navigate('/')}>Logout</button>
             </div>
+          </div>
+          <div data-thq="thq-burger-menu" className="home1-burger-menu">
+           
+          </div>
+          <div
+            data-thq="thq-mobile-menu"
+            className="home1-mobile-menu1 mobileMenu"
+          >
+             
+          </div>
+        </header>
             <div className="transaction-form-container">
                 <h2 className="heading2"> Create Bill Request :</h2>
                 <form className="transaction-form" onSubmit={handleSubmit}>

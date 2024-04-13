@@ -23,10 +23,9 @@ const Login = (props) => {
           <span className="logo">BANKIFY</span>
           <div data-thq="thq-navbar-nav" className="login-desktop-menu">
             <nav className="login-links"></nav>
-            <div className="login-buttons">
+            {/* <div className="login-buttons">
               <button className="login-login buttonFlat">Login</button>
-              <button className="buttonFilled">Register</button>
-            </div>
+            </div> */}
           </div>
           <div data-thq="thq-burger-menu" className="login-burger-menu">
             <svg viewBox="0 0 1024 1024" className="login-icon socialIcons">
@@ -58,7 +57,6 @@ const Login = (props) => {
               </nav>
               <div className="login-buttons1">
                 <button className="buttonFlat">Login</button>
-                <button className="buttonFilled">Register</button>
               </div>
             </div>
             <div>
@@ -105,7 +103,7 @@ const Login = (props) => {
               className="login-textinput1 input"
             />
           </div>
-          <button formAction='submit' type="button" className="login-button button">
+          <button formAction='submit' type="button" className="login-button button" onClick={() => navigate('/home')}>
             Login
           </button>
         </form>

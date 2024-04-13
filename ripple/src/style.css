@@ -47,7 +47,7 @@
   border-color: var(--dl-color-gray-black);
   border-width: 1px;
   border-radius: 4px;
-  background-color: var(--dl-color-gray-white);
+  /* background-color: var(--dl-color-gray-white); */
 }
 .input {
   color: var(--dl-color-gray-black);
@@ -83,7 +83,8 @@
   transform: none !important;
 }
 .buttonFilled {
-  color: var(--dl-color-custom-neutral-light);
+  color: none;
+  background-color: none;
   transition: 0.3s;
   font-family: Helvetica Neue;
   font-weight: bold;
@@ -92,10 +93,10 @@
   border-radius: 4px;
   padding-right: var(--dl-space-space-oneandhalfunits);
   padding-bottom: var(--dl-space-space-halfunit);
-  background-color: var(--dl-color-custom-primary1);
+  /* background-color: var(--dl-color-custom-primary1); */
 }
 .buttonFilled:hover {
-  background-color: var(--dl-color-custom-primary2);
+  /* background-color: var(--dl-color-custom-primary2); */
 }
 .buttonFilledSecondary {
   color: var(--dl-color-custom-neutral-light);
@@ -106,14 +107,14 @@
   padding-left: var(--dl-space-space-oneandhalfunits);
   padding-right: var(--dl-space-space-oneandhalfunits);
   padding-bottom: var(--dl-space-space-halfunit);
-  background-color: var(--dl-color-custom-primary1);
+  /* background-color: var(--dl-color-custom-primary1); */
 }
 .buttonFilledSecondary:hover {
-  background-color: var(--dl-color-custom-primary2);
+  /* background-color: var(--dl-color-custom-primary2); */
 }
 .buttonOutline {
   color: var(--dl-color-custom-neutral-light);
-  border: 1px solid;
+  /* border: 1px solid; */
   font-family: Helvetica Neue;
   font-weight: bold;
   padding-top: var(--dl-space-space-halfunit);
@@ -122,14 +123,15 @@
   border-radius: 4px;
   padding-right: var(--dl-space-space-oneandhalfunits);
   padding-bottom: var(--dl-space-space-halfunit);
-  background-color: var(--dl-color-custom-accent1);
+  /* background-color: var(--dl-color-custom-accent1); */
 }
 .buttonOutline:hover {
   border-color: var(--dl-color-custom-primary1);
-  background-color: var(--dl-color-custom-primary1);
+  /* background-color: var(--dl-color-custom-primary1); */
 }
 .buttonFlat {
-  color: var(--dl-color-custom-neutral-light);
+  /* color: var(--dl-color-custom-neutral-light); */
+  background-color: none;
   font-family: Helvetica Neue;
   font-weight: bold;
   padding-top: var(--dl-space-space-halfunit);
