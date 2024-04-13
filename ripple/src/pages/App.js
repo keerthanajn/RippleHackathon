@@ -1,11 +1,12 @@
 
 import './App.css';
+import Home from './Home';
+import { Routed } from '../routes';
 
 function App() {
   return (
-    <><div className="App">
-        HI
-    </div></>
+    // <Home />
+    <Routed/>
     
   );
 }
