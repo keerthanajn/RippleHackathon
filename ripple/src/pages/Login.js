@@ -9,10 +9,10 @@ const Login = (props) => {
   return (
     <div className="login-container">
       <Helmet>
-        <title>Login - Extra Small Weekly Crocodile</title>
+        <title>Login</title>
         <meta
           property="og:title"
-          content="Login - Extra Small Weekly Crocodile"
+          content="Login"
         />
       </Helmet>
       <div className="login-header">

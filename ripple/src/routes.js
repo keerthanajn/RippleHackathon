@@ -1,6 +1,7 @@
 import {BrowserRouter as Router,Routes, Route} from 'react-router-dom';
 import Home from './pages/Home';
 import Login from './pages/Login';
+import ax from './ax'
 
 export const Routed = () =>{
     return(
@@ -13,6 +14,10 @@ export const Routed = () =>{
                 <Route path='/login' Component={Login}>
                     
                 </Route> 
+                <Route path='/app' Component={ax}>
+                    
+                </Route> 
+                
             </Routes>
             
         </Router>

@@ -3,7 +3,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 
 // import FeatureCard from '../components/feature-card'
-import './Home.css'
+// import './Home.css'
 // import './style.css'
 import { useNavigate } from 'react-router-dom';
 
@@ -13,10 +13,10 @@ const Home= (props) => {
   return (
     <div className="home1-container">
       <Helmet>
-        <title>Home1 - Extra Small Weekly Crocodile</title>
+        <title>Home</title>
         <meta
           property="og:title"
-          content="Home1 - Extra Small Weekly Crocodile"
+          content="Home"
         />
       </Helmet>
       {/* <div className="home1-header"> */}
