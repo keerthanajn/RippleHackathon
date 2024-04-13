@@ -1,8 +1,12 @@
+body{
+    margin: 0%;
+}
+
 .login-container {
     width: 100%;
     display: flex;
-    overflow: auto;
-    min-height: 100vh;
+    /* overflow: auto; */
+    /* min-height: 100vh; */
     align-items: center;
     flex-direction: column;
     justify-content: flex-start;
@@ -225,6 +229,13 @@
     margin-bottom: var(--dl-space-space-oneandhalfunits);
     text-transform: capitalize;
     background-color: var(--dl-color-custom-primary1);
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 1rem;
+  }
+  .login-button:hover{
+    background-color: green;
   }
   .login-footer {
     flex: 0 0 auto;
@@ -233,6 +244,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid white;
   }
   .login-container1 {
     gap: var(--dl-space-space-unit);
@@ -280,7 +292,7 @@
     border-right-width: 0px;
   }
   .login-container2 {
-    flex: 0 0 auto;
+    flex: auto;
     width: 100%;
     display: flex;
     align-items: center;
