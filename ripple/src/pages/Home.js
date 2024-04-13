@@ -62,6 +62,10 @@ const Home= (props) => {
               </div>
             </div>
             <div>
+
+
+
+            
               <svg
                 viewBox="0 0 950.8571428571428 1024"
                 className="home1-icon04 socialIcons"
@@ -81,7 +85,14 @@ const Home= (props) => {
       </div>
       <div className="home1-hero">
         <div className="home1-hero1 heroContainer">
+        <div className="account-boxes">
+                        <div className="account-box">Acc1</div>
+                        <div className="account-box">Acc2</div>
+                        <div className="account-box">Acc3</div>
+                    </div>
           <div className="home1-container1">
+
+          
             <h2 className="heading2"> Transaction History</h2>
             <div className="home1-container2">
               
