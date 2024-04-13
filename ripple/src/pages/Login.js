@@ -1,10 +1,11 @@
 import React from 'react'
-
+import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet'
 
 import './Login.css'
 
 const Login = (props) => {
+    const navigate = useNavigate();
   return (
     <div className="login-container">
       <Helmet>
@@ -104,8 +105,8 @@ const Login = (props) => {
               className="login-textinput1 input"
             />
           </div>
-          <button type="button" className="login-button button">
-            Button
+          <button formAction='submit' type="button" className="login-button button">
+            Login
           </button>
         </form>
       </div>
