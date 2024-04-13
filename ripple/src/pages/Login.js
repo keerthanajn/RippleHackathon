@@ -9,10 +9,10 @@ const Login = (props) => {
   return (
     <div className="login-container">
       <Helmet>
-        <title>Login - Extra Small Weekly Crocodile</title>
+        <title>Login</title>
         <meta
           property="og:title"
-          content="Login - Extra Small Weekly Crocodile"
+          content="Login"
         />
       </Helmet>
       <div className="login-header">
@@ -88,12 +88,12 @@ const Login = (props) => {
         <form className="login-form">
           <div className="login-login-inputs">
             <label className="login-passwords">
-              <span>Username</span>
+              <span>Email ID</span>
               <br></br>
             </label>
             <input
               type="text"
-              placeholder="username"
+              placeholder="Email"
               className="login-textinput input"
             />
           </div>
@@ -101,7 +101,7 @@ const Login = (props) => {
             <label className="login-passwords1">Password</label>
             <input
               type="text"
-              placeholder="password"
+              placeholder="Password"
               className="login-textinput1 input"
             />
           </div>
