@@ -1,0 +1,1 @@
+A decentralised market place for bidding in all currencies. 
