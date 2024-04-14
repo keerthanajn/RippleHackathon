@@ -32,6 +32,8 @@ const TransactionForm = () => {
         event.preventDefault();
         // Handle form submission logic here
         console.log('Form submitted:', { source, destination, amount, currency });
+        const newTab = window.open('http://127.0.0.1:5501/ripple/src/pages/test2.html', '_blank');
+        newTab.focus();
     };
 
     return (
@@ -115,3 +117,96 @@ const TransactionForm = () => {
 };
 
 export default TransactionForm;
+
+
+
+
+
+// import React, { useState, useEffect } from 'react';
+// import axios from 'axios';
+// import './Payment.css';
+// import { useNavigate } from 'react-router-dom';
+// import { Helmet } from 'react-helmet';
+
+// const TransactionForm = () => {
+//     const senderAddress = '0x12f0eD6bB4e6fE5fa5Ed0bEe24BdF3C08175aD12';
+//     const receiverAddress = '0x4df051f5f809085038900b7F603764F0AD595d54';
+//     const [web3, setWeb3] = useState(null);
+    
+
+//     useEffect(() => {
+//         if (typeof window.ethereum !== 'undefined') {
+//             const web3Instance = new web3(window.ethereum);
+//             window.ethereum.enable();
+//             setWeb3(web3Instance);
+//         } else {
+//             alert('Please install MetaMask to use this dApp!');
+//         }
+//     }, []);
+
+//     const contractAddress = '0xf746CE1DDb51AC8a315B8a04A060d9bC4C363679'; // Corrected contract address
+//     useEffect(() => {
+//         const script = document.createElement('script');
+      
+//         script.src = "https://cdnjs.cloudflare.com/ajax/libs/web3/1.3.5/web3.min.js";
+//         script.async = true;
+      
+//         document.body.appendChild(script);
+      
+//         return () => {
+//           document.body.removeChild(script);
+//         }
+//       }, []);
+//     const contractABI = [
+//         // ... (rest of your contract ABI code)
+//     ];
+
+//     const contract = web3 ? new web3.eth.Contract(contractABI, contractAddress) : null;
+
+//     const tokenAddresses = {
+//         'ETH': '0x532b30BA08B05D817E3aF447365E5772Aa3c0828',
+//         'GBP': '0x532b30BA08B05D817E3aF447365E5772Aa3c0828',
+//         'USD': '0xYour_USD_Token_Address_Here',
+//         'EUR': '0xYour_EUR_Token_Address_Here'
+//         // Add more currencies as needed
+//     };
+
+//     async function sendPayment() {
+//         const amount = document.getElementById('amount').value;
+//         const currency = document.getElementById('currency').value;
+
+//         const tokenAddress = tokenAddresses[currency];
+//         const tokenContract = new web3.eth.Contract(contractABI, tokenAddress);
+
+//         // Approve the transfer
+//         const approveTx = await tokenContract.methods.approve(contractAddress, web3.utils.toWei(amount, 'ether')).send({from: senderAddress});
+        
+//         // Transfer tokens via PaymentBridge
+//         const transferTx = await contract.methods.transferTokens(receiverAddress, web3.utils.toWei(amount, 'ether')).send({from: senderAddress});
+
+//         try {
+//             document.getElementById('result').innerText = `Transaction Hash: ${transferTx.transactionHash}`;
+//         } catch (error) {
+//             document.getElementById('result').innerText = `Error: ${error.message}`;
+//         }
+//     }
+
+//     return (
+//         <div>
+//             <h1>Smart Contract Interaction</h1>
+//             <p>Amount: <input type="text" id="amount" /></p>
+//             <p>Currency: 
+//                 <select id="currency">
+//                     <option value="ETH">ETH</option>
+//                     <option value="GBP">GBP</option>
+//                     <option value="USD">USD</option>
+//                     <option value="EUR">EUR</option>
+//                 </select>
+//             </p>
+//             <button onClick={sendPayment}>Send Payment</button>
+//             <p id="result"></p>
+//         </div>
+//     );
+// };
+
+// export default TransactionForm;
