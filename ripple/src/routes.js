@@ -10,6 +10,7 @@ import React from 'react';
 
 export const Routed = () =>{
     return(
+        //routes to different pages
         <Router>
             <Routes>
                 <Route path='/' Component={Login}>  

@@ -3,16 +3,19 @@ from django.db import models
 # class AccountType(models.Model):
 #      name = models.CharField(max_length=200)
 
+#Login table
 class Login(models.Model):
     username = models.CharField(max_length=15, unique=True)
     password = models.CharField(max_length=15)
     name = models.CharField(max_length=200)
 
+#account table
 class Account(models.Model):
     account_id = models.IntegerField(unique=True)
     account_name = models.CharField(max_length=200)
     account_type = models.CharField(max_length=200)
 
+#Bills table
 class Bills(models.Model):
     sender_name = models.CharField(max_length=200)
     sender_email = models.CharField(max_length=200)

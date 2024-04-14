@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
 const TransactionForm = () => {
+    //transaction details needed
     const [source, setSource] = useState('');
     const [destination, setDestination] = useState('');
     const [amount, setAmount] = useState('');
@@ -14,6 +15,7 @@ const TransactionForm = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
+        //provide user with a list registed accounts
         axios.get('http://127.0.0.1:8000/getaccount/')
             .then(res => {
                 const types = res.data.map(account => account.account_name);
@@ -25,7 +27,7 @@ const TransactionForm = () => {
                 console.error('Error fetching account types:', err);
             });
     }, []);
-
+//logs the info
     const handleSubmit = (event) => {
         event.preventDefault();
         // Handle form submission logic here

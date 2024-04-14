@@ -4,18 +4,18 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import Helmet from 'react-helmet'
 const AddSource = () => {
-    const [account_type, setSource] = useState('');
-    const [walletAccountId, setWalletAccountId] = useState('');
-    const [account_id, setAccountId] = useState('');
-    const [account_name, setFirstName] = useState('');
-    // const [lastName, setLastName] = useState('');
-    const navigate = useNavigate();
+    const [account_type, setSource] = useState(''); //account type
+    const [walletAccountId, setWalletAccountId] = useState(''); //wallent account
+    const [account_id, setAccountId] = useState(''); //acoount id 
+    const [account_name, setFirstName] = useState(''); // account name
+    const navigate = useNavigate(); //navigate to different page
 
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            const response = await axios.post('http://127.0.0.1:8000/postaccount/', {
-                account_id,
+            //format accepted
+            const response = await axios.post('http://127.0.0.1:8000/postaccount/', { 
+                account_id, 
                 account_name,
                 account_type
             });
@@ -28,7 +28,7 @@ const AddSource = () => {
     };
 
     const renderAccountInputs = () => {
-        if (account_type === 'Crypto') {
+        if (account_type === 'Crypto') { //if chooosen account type is crypto
             return (
                 <div className="form-group">
                     <label htmlFor="walletAccountId">Wallet Name</label>
@@ -39,7 +39,7 @@ const AddSource = () => {
                         onChange={(e) => setWalletAccountId(e.target.value)}
                     />
                 </div>
-            );
+            ); //if chosen account type is other than crypto 
         } else if (account_type === 'Micro-Finance' || account_type === 'Bank') {
             return (
                 <>
@@ -61,15 +61,6 @@ const AddSource = () => {
                             onChange={(e) => setFirstName(e.target.value)}
                         />
                     </div>
-                    {/* <div className="form-group">
-                        <label htmlFor="lastName">Last Name</label>
-                        <input
-                            type="text"
-                            id="lastName"
-                            value={lastName}
-                            onChange={(e) => setLastName(e.target.value)}
-                        />
-                    </div> */}
                 </>
             );
         }
@@ -81,7 +72,7 @@ const AddSource = () => {
             <div className='home1-container'>
             <Helmet>
                 <title>Add Account</title>
-                <meta property="og:title" content="Login" />
+                <meta property="og:title" content="Login" /> 
             </Helmet>
                 <header
                     data-thq="thq-navbar"
