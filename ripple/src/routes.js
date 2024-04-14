@@ -6,6 +6,7 @@ import Bill from './pages/Bill'
 import CreateBill from './pages/CreateBill'
 import AddSource from './pages/AddSource'
 import XRPtest from './pages/XRPtest'
+import React from 'react';
 
 export const Routed = () =>{
     return(

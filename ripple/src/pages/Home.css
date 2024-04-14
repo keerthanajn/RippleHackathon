@@ -235,7 +235,7 @@
 .transaction-history table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
+  margin-top: 2px;
 }
 
 .transaction-history th, 
@@ -282,18 +282,18 @@
     align-items: center;
     justify-content: center;
   }
-  .home1-nav12 {
+  /* .home1-nav12 {
     margin-bottom: var(--dl-space-space-unit);
   }
   .home1-nav22 {
     margin-bottom: var(--dl-space-space-unit);
   }
   .home1-nav32 {
-    margin-bottom: var(--dl-space-space-unit);
-  }
-  .home1-nav42 {
-    margin-bottom: var(--dl-space-space-unit);
-  }
+    margin-bottom: var(--dl-space-space-unit); */
+  /* }
+  /* .home1-nav42 { */
+    /* margin-bottom: var(--dl-space-space-unit);
+  } */ */
   .home1-nav52 {
     margin-bottom: var(--dl-space-space-unit);
   }
