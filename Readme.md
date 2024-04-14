@@ -55,9 +55,6 @@ PayBridge is a fintech solution designed specifically for international students
 
 7. **Access to Student Loans**: PayBridge goes beyond payment processing by offering access to student loans for studying abroad. Students can manage their loan payments directly through the platform after completing their studies.
 
-#### Getting Started
-To start using PayBridge, simply sign up for an account on our website and complete the verification process. Once verified, you can link your traditional bank account, microfinance service account, or crypto wallet to begin making payments.
-
 #### How to Use
 1. **Select Payment Method**: Choose your preferred payment method - traditional bank account, microfinance service, or crypto wallet.
 2. **Enter Payment Details**: Input the necessary payment details, including the recipient university and the amount to be paid.
