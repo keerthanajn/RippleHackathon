@@ -31,6 +31,8 @@ npm install axios
 npm start 
 ```
 
+Note: There will be a test2.html, run that file on live server.
+
 ### PAYBRIDGE - Simplifying International Tuition Payments for Students
 
 Welcome to PayBridge! Our platform aims to revolutionize the way international students pay their tuition fees, addressing the pain points associated with traditional banking systems and providing a seamless experience for students from both developed and developing countries.
