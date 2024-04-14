@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Payment.css';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 const TransactionForm = () => {
     const [source, setSource] = useState('');
@@ -33,6 +34,10 @@ const TransactionForm = () => {
 
     return (
         <div className='home1-container'>
+            <Helmet>
+                <title>Transaction</title>
+                <meta property="og:title" content="Login" />
+            </Helmet>
             <header
                 data-thq="thq-navbar"
                 className="navbarContainer home1-navbar-interactive"

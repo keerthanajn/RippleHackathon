@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import './Home.css';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 const Home = () => {
     const [bankAccounts, setBankAccounts] = useState([]);
@@ -28,6 +29,10 @@ const Home = () => {
 
     return (
         <div className="home1-container">
+            <Helmet>
+                <title>Home</title>
+                <meta property="og:title" content="Login" />
+            </Helmet>
             <header
                 data-thq="thq-navbar"
                 className="navbarContainer home1-navbar-interactive"

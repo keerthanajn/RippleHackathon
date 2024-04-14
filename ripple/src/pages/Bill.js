@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Bill.css';
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 const Bill = () => {
     const [transactions, setTransactions] = useState([]);
@@ -19,6 +20,10 @@ const Bill = () => {
 
     return (
         <body>
+            <Helmet>
+                <title>My Bills</title>
+                <meta property="og:title" content="Login" />
+            </Helmet>
             <div className='home1-container'>
             <header
                 data-thq="thq-navbar"

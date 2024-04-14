@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './CreateBill.css';
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 const CreateBill = () => {
     const [recipientName, setRecipientName] = useState('');
@@ -18,6 +19,10 @@ const CreateBill = () => {
     const navigate = useNavigate()
     return (
         <body>
+            <Helmet>
+                <title>Create Bill</title>
+                <meta property="og:title" content="Login" />
+            </Helmet>
             <div className='home1-container'>
             <header
           data-thq="thq-navbar"
