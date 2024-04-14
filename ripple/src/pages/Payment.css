@@ -169,3 +169,12 @@ select, input[type="text"] {
 #destinantion{
     margin-right: 3%;
 }
+#senderAddress{
+    background-color: #FFFFFF;
+}
+#receiverAddress{
+    background-color: #FFFFFF;
+}
+#amount{
+    background-color: #FFFFFF;
+}
