@@ -5,7 +5,7 @@ import Payment from './pages/Payment'
 import Bill from './pages/Bill'
 import CreateBill from './pages/CreateBill'
 import AddSource from './pages/AddSource'
-import XRPtest from './pages/XRPtest'
+import ContractInteraction from './pages/XRPtest'
 import React from 'react';
 
 export const Routed = () =>{
@@ -25,7 +25,7 @@ export const Routed = () =>{
                 </Route> 
                 <Route path='/CreateBill' Component={CreateBill}>
                 </Route> 
-                <Route path='/XRP' Component={XRPtest}>
+                <Route path='/XRP' Component={ContractInteraction}>
                 </Route> 
             </Routes>
             
