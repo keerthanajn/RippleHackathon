@@ -8,19 +8,20 @@
  - Backend built with Django and Rest API
 
 
-## Getting started
+# Getting started
 
 
-# Run the backend
+## Run the backend
 ```
 cd api
 pip3 install djangorestframework
 pip3 install django-cors-headers
 python3 manage.py runserver 
 ```
+
 In a new terminal, 
 
-# Run the frontend
+## Run the frontend
 ```
 cd ripple
 npm i
