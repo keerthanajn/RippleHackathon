@@ -23,10 +23,10 @@ from db.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('getuser/', views.getallusers.user_login),
-    path('getaccount/', views.GetAccount.get),
-    path('getbills/', views.getbills.get_bills),
-    path('postaccount/', views.PostAccount.post),
+    path('getuser/', views.getallusers.user_login), #link to all users in database for login purposes
+    path('getaccount/', views.GetAccount.get), #Link to all the accounts owned by the user
+    path('getbills/', views.getbills.get_bills), #link to all the bils payed/pending to pay by user
+    path('postaccount/', views.PostAccount.post), #link to add new account to database
     # path('',LoginView.as_view(), name="React" ),
     # path('account/', AccountView.as_view(), name="account" )
 ]

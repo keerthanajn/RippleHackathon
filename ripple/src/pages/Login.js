@@ -7,6 +7,7 @@ import { Helmet } from 'react-helmet';
 import './Login.css';
 
 const Login = () => {
+    //variables
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
@@ -18,8 +19,9 @@ const Login = () => {
     // Fetch account details when the component mounts
     useEffect(() => {
         async function fetchAccountDetails() {
+            
             try {
-                const response = await axios.get('http://127.0.0.1:8000/getuser/');
+                const response = await axios.get('http://127.0.0.1:8000/getuser/'); //account detials fetch
                 setAccountDetails(response.data);
             } catch (error) {
                 console.error('Error fetching account details:', error);
@@ -28,7 +30,7 @@ const Login = () => {
 
         fetchAccountDetails();
     }, []);
-
+ //authentication
     const handleSubmit = (e) => {
         e.preventDefault();
         // Check if the entered email and password match any account details

@@ -5,13 +5,14 @@ import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
 const Home = () => {
+    //variables
     const [bankAccounts, setBankAccounts] = useState([]);
     const [cryptoAccounts, setCryptoAccounts] = useState([]);
     const [microFinanceAccounts, setMicroFinanceAccounts] = useState([]);
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get('http://127.0.0.1:8000/getaccount/')
+        axios.get('http://127.0.0.1:8000/getaccount/') //display accounts based on type
             .then(response => {
                 const data = response.data;
                 const bank = data.filter(account => account.account_type === 'Bank');

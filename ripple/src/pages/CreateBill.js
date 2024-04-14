@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
 const CreateBill = () => {
+    //details for a bill
     const [recipientName, setRecipientName] = useState('');
     const [recipientEmail, setRecipientEmail] = useState('');
     const [referenceName, setReferenceName] = useState('');
@@ -11,6 +12,7 @@ const CreateBill = () => {
     const [dueDate, setDueDate] = useState('');
     const [currency, setCurrency] = useState('');
 
+    //logs the submitted the info
     const handleSubmit = (event) => {
         event.preventDefault();
         // Handle form submission logic here
@@ -112,7 +114,7 @@ const CreateBill = () => {
                         />
                     </div>
 
-                    <button type="submit" className="make-payment-button">Make Payment</button>
+                    <button type="submit" className="make-payment-button">Create Bill</button>
                 </form>
             </div>
             </div>

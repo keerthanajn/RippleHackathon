@@ -9,6 +9,7 @@ import XRPtest from './pages/XRPtest'
 
 export const Routed = () =>{
     return(
+        //routes to different pages
         <Router>
             <Routes>
                 <Route path='/' Component={Login}>  
