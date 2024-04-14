@@ -20,7 +20,7 @@ class getallusers(APIView):
         mains = []
         for i in objs:
             js = {}
-            js["username"]=i.email
+            js["username"]=i.username
             js["password"]=i.password
             js["name"] = i.name
             mains.append(js)
@@ -72,6 +72,25 @@ class getbills(APIView):
                 
                 bill_list.append(bill_data)
             return JsonResponse(bill_list, safe=False)
+    
+class PostAccount(APIView):
+    @csrf_exempt
+    def post(request):
+        data = json.loads(request.body)
+        account_id = data.get('account_id', None)
+        account_name = data.get('account_name', None)
+        account_type = data.get('account_type', None)
+        
+        if account_id and account_name and account_type:
+            # Assuming Account model has these fields
+            Account.objects.create(
+                account_id=account_id,
+                account_name=account_name,
+                account_type=account_type
+            )
+            return JsonResponse({'message': 'Account created successfully'}, status=201)
+        else:
+            return JsonResponse({'error': 'Incomplete data provided'}, status=400)
 
 # class PostAccount(APIView):
 #     def post(self, request):

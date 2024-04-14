@@ -307,13 +307,13 @@
   text-transform: none;
   text-decoration: none;
 }
-.logo {
+/* .logo {
   font-size: 2em;
   font-family: Helvetica Neue;
   font-weight: 700;
   line-height: 150%;
   text-transform: uppercase;
-}
+} */
 .heading1 {
   font-size: 48px;
   text-align: center;

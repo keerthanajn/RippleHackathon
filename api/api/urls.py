@@ -26,6 +26,7 @@ urlpatterns = [
     path('getuser/', views.getallusers.user_login),
     path('getaccount/', views.GetAccount.get),
     path('getbills/', views.getbills.get_bills),
+    path('postaccount/', views.PostAccount.post),
     # path('',LoginView.as_view(), name="React" ),
     # path('account/', AccountView.as_view(), name="account" )
 ]

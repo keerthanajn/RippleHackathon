@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Bill.css';
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 const Bill = () => {
     const [transactions, setTransactions] = useState([]);
@@ -19,11 +20,16 @@ const Bill = () => {
 
     return (
         <body>
+            <Helmet>
+                <title>My Bills</title>
+                <meta property="og:title" content="Login" />
+            </Helmet>
+            <div className='home1-container'>
             <header
                 data-thq="thq-navbar"
                 className="navbarContainer home1-navbar-interactive"
             >
-                <span className="logo">BANKIFY</span>
+                <span className="logo">PAYBRIDGE</span>
                 <div data-thq="thq-navbar-nav" className="home1-desktop-menu">
                     <nav className="home1-links"></nav>
                     <div className="home1-buttons">
@@ -76,6 +82,7 @@ const Bill = () => {
                     ))}
                 </tbody>
             </table>
+            </div>
         </body>
     );
 };
